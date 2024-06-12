@@ -1,0 +1,38 @@
+{
+    "article": {
+        "title": "username: 土井",
+        "core_grade": "0",
+        "theme_color": "#ff0000",
+        "content": "\n\n%%IMG-S=image_3.jpeg-W=100%%§0§1§2§3§4§5§6§7§8§9§a§b§c§d§e§f§z§y§x§l§L§n§o§m§k\n%%IMG-S=image_4.jpeg-W=100%%\n%%IMG-S=image_2.jpeg-W=100%%\n%%VIDEO-S=image_2.jpeg-W=100%%§r\n§z§y§r\n\n##LINK-H=https://www.google.com/-T=##",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": "image_1.png"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 0,
+            "y": 0
+        },
+        "images": {
+            "icon": "image_5.gif"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "yuton"
+}

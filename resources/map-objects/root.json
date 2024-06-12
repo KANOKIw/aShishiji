@@ -1,0 +1,38 @@
+{
+    "article": {
+        "title": "orgname",
+        "core_grade": "4年生",
+        "theme_color": "#569cd6",
+        "content": "§l§zかのき§r§v\n\n2008年 3月 13日,町田§Ldctf§r市民病院§rで生まれる。§v\n\n∫:IMG-S=image_0.gif-W=100;∫\n∫:IMG-S=image_4.jpg-W=100;∫\n町田市民病院§v§v\n\n§6§z§l§ka§r§z§l町田市民病院について§6§ka§r§v\n\nなんと§51943年（昭和 18年）§rに開院している。§v§v\n\nLinks:§v\n    #:LINK-H=https://ja.wikipedia.org/-T=wiki pedia www;#\n\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "Horror",
+        "custom_tr": [],
+        "images": {
+            "header": "image_5.gif"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 0,
+            "y": 0
+        },
+        "images": {
+            "icon": "image_5.gif"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "root"
+}

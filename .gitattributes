@@ -1,0 +1,14 @@
+LICENSE eol=crlf
+*.bat eol=crlf
+*.cmd eol=crlf
+*.ps1 eol=lf
+*.sh eol=lf
+*.rtf -text
+**/*.json linguist-language=jsonc
+*.mcfunction linguist-vendored
+*.psd filter=lfs diff=lfs merge=lfs -text
+*d filter=lfs diff=lfs merge=lfs -text
+resources/cloud/org/minor/video_0.mp4 filter=lfs diff=lfs merge=lfs -text
+resources/cloud/org/root/ filter=lfs diff=lfs merge=lfs -text
+resources/cloud/org/root/* filter=lfs diff=lfs merge=lfs -text
+resources/cloud/org/minor/* filter=lfs diff=lfs merge=lfs -text

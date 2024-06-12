@@ -1,0 +1,39 @@
+{
+    "article": {
+        "title": "物理部",
+        "core_grade": "1~5年",
+        "theme_color": "#8AC75A",
+        "content": "§L§y§2セタゴラスイッチ§v%:VIDEO-S=trial.mp4-W=100;%§v§y§3自己紹介§r§v私立世田谷学園中学校 高等学校  物理部です。中1から高2まで約20人ほどで活動中。",
+        "crowd_status": {
+            "level": 57,
+            "estimated": 7
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "header.png"
+        },
+        "venue": "物理実験室",
+        "schedule": "獅子児祭開催中ずっと"
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic",
+            "border": null
+        },
+        "coordinate": {
+            "x": 632,
+            "y": 695
+        },
+        "images": {
+            "icon": "icon.png"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "butsuribu"
+}

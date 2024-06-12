@@ -1,0 +1,38 @@
+{
+    "article": {
+        "title": "甘城なつき",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "∫:IMG-S=bed.png-W=100;∫#:LINK-H=https://www.try-it.jp-T=;#\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "bottomPC.png"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 0,
+            "y": 0
+        },
+        "images": {
+            "icon": "nyaa_h.png"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F2"
+    },
+    "discriminator": "kanokiw"
+}

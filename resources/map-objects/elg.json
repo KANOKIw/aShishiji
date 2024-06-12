@@ -1,0 +1,22 @@
+{
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "static",
+            "border": null
+        },
+        "coordinate": {
+            "x": 191,
+            "y": 129
+        },
+        "images": {
+            "icon": "elg.gif"
+        },
+        "size": {
+            "width": 150,
+            "height": 109
+        },
+        "floor": "F2"
+    },
+    "discriminator": "elderguardian"
+}

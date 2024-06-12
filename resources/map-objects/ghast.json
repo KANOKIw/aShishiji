@@ -1,0 +1,39 @@
+{   
+    "article": {
+        "title": "ガスト",
+        "core_grade": "Mojang",
+        "theme_color": "#00AA00",
+        "content": "",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "ghast_header.png"
+        },
+        "venue": "不明",
+        "schedule": "不明"
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "static",
+            "border": null
+        },
+        "coordinate": {
+            "x": 1067,
+            "y": 416
+        },
+        "images": {
+            "icon": "ghast.gif"
+        },
+        "size": {
+            "width": 150,
+            "height": 150
+        },
+        "floor": "F1"
+    },
+    "discriminator": "ghast"
+}

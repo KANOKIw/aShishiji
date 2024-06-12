@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>お使いの端末の危険が瀕しています!!</title>
+        <style>
+            *{margin: 0;}
+            .ujioaH{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .hgr{
+                transition: background-color 10ms ease;
+                cursor: pointer;
+            }
+            .hgr.active{
+                background-color: #eeeeee;
+            }
+            .hgr p{
+                pointer-events: none;
+            }
+            *{
+                user-select: none;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none; 
+                -webkit-user-drag: none;
+                -khtml-user-select: none;
+                -khtml-user-drag: none;
+                -khtml-user-drag: none;
+                -moz-user-select: none; 
+                -ms-user-select: none;
+                -webkit-tap-highlight-color: transparent;
+            }
+        </style>
+    </head>
+    <body style="width: 100vw;height: 100vh;" class="ujioaH">
+        <main style="margin: auto;width: 50vw;" class="ujioaH">
+            <div class="ujioaH" style="flex-flow: column;background-color: white;border-radius: 16px;
+              padding: 10px; text-align: center;border: solid #dddddd 2px;box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, .1);">
+                <upper class="ujioaH" style="flex-flow: column;">
+                    <div style="width: 100%;" class="ujioaH">
+                        <img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Settings-512.png" style="width: 25%;">
+                        <h2><span style="color: #B00020;">警告！！</span>
+                            <br>
+                            あなたの iPhone 14 は<span id="uyhgafuyh" style="color: #B00020;">0</span>個の危機に瀕しています!!
+                        </h2>
+                    </div>
+                    <v style="height: 10px;width: 2px;"></v>
+                    <div style="padding: 10px;">
+                        <p>あなたの iPhone 14 の危険をすべて除するには、以下のリンクをクリックしてアンチウイルスをダウンロードします。</p>
+                        <a href="/test/comeon.html">https://www.google.com/THE_BEST_ANTI_VIRUS_APPLICATION</a>
+                    </div>
+                </upper>
+                <lower style="border-top: solid #dddddd 2px; height: 45px; width: calc(100% + 20px);display: block;align-items: flex-start;">
+                    <div class="ujioaH" style="width: 100%;height: 100%;position: relative;align-items: flex-start;">
+                        <div style="width: 50%;border-right: solid 1px #dddddd;height: calc(100% + 12px);" class="ujioaH hgr">
+                            <p style="color: #1976D2;">受け入れる</p>
+                        </div>
+                        <div style="width: 50%;border-left: solid 1px #dddddd;height: calc(100% + 12px);" class="ujioaH hgr">
+                            <p style="color: #1976D2;">OK</p>
+                        </div>
+                    </div>
+                </lower>
+            </div> 
+        </main>
+        <script>
+            document.addEventListener("touchstart", function(e){
+                e.target.classList.add("active");
+            });document.addEventListener("mousedown", function(e){
+                e.target.classList.add("active");
+            });
+            document.addEventListener("touchend", function(e){
+                document.querySelectorAll(".active").forEach(i => i.classList.remove("active"));
+            });document.addEventListener("mouseup", function(e){
+                document.querySelectorAll(".active").forEach(i => i.classList.remove("active"));
+            });
+            const g = document.getElementById("uyhgafuyh");
+            var p = 0;
+            function j(m){
+                function v(d){
+                    return Math.ceil(Math.random() * d);
+                }
+                if (m > 45){
+                    return v(10000);
+                } else if (m > 35){
+                    return v(1000);
+                } else if (m > 25){
+                    return v(250);
+                } else {
+                    return v(100);
+                }
+            }
+            function h(){
+                g.textContent = p.toString();
+                p++;
+                setTimeout(h, j(p));
+            }
+            h.call();
+            document.querySelectorAll(".hgr").forEach(L => {
+                L.addEventListener("click", function(){
+                    window.open("/test/comeon.html", "_blank");
+                });
+            });
+        </script>
+    </body>
+</html>
