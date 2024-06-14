@@ -58,6 +58,9 @@ app.get("/qr_login", drought.userauth.giveSession);
 app.post("/login", drought.userauth.giveFine);
 
 
+app.get("/org_completion", drought.useractivity.passedOrg);
+
+
 app.post("/data/map-data/objects", (req, res) => {
 	const mapobjects_ = mapObjAPI.getAllObjects(false);
 	res.send(mapobjects_);

@@ -21,3 +21,21 @@ DB.serialize(() => {
     `);
 });
 
+const oDB = new database.Database("./.db/org/auth.db");
+oDB.serialize(() => {
+    oDB.run(`CREATE TABLE IF NOT EXISTS Auth_Data (
+    idx INTEGER,
+    org_name TEXT,
+    pass_word TEXT,
+    cloud_size INTEGER,
+    confidence TEXT,
+    PRIMARY KEY (idx)
+);`);
+    oDB.run(`CREATE TABLE IF NOT EXISTS Auth_Sessions (
+    idx INTEGER,
+    sessionid TEXT,
+    corresponder TEXT, -- Account Name
+    PRIMARY KEY (idx)
+);`);
+oDB.run(`INSERT INTO Auth_Data (org_name, pass_word, cloud_size) VALUES ("root", "root", 500);`);
+});

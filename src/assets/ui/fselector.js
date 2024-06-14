@@ -83,6 +83,7 @@ function changeFloor(floor, data, callback){
         moveMapAssistingNegative(canvas, ctx, { left: 0, top: 0 });
         clearObj();
         showDigitsOnFloor(floor, mapObjectComponent);
+        showClearedOrgs();
         setBehavParam();
         endLoad(TEXT[LANGUAGE].MAP_LOADED);
         if (callback !== void 0)

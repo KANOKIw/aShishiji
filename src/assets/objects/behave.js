@@ -59,10 +59,14 @@ function updatePositions(){
 /**
  * 
  * @param {string} disc 
- * @returns {HTMLElement?}
+ * @returns {HTMLElement}
  */
 function getObject(disc){
-    return document.getElementById(formatString(objectIdFormat, disc));
+    const k = document.getElementById(formatString(objectIdFormat, disc));
+
+    if (k == null)
+        throw new Error("No Object was found.");
+    return k;
 }
 
 
@@ -71,8 +75,18 @@ function getObject(disc){
  * @param {string} discriminator 
  * @param {string} message 
  */
-function setMessageAbove(discriminator, message){
+function setObjectMessageAbove(discriminator, message){
     const obje = getObject(discriminator);
+}
 
-    if (!obje) throw new Error("No Object was found.");
+
+/**
+ * 
+ * @param {string} discriminator 
+ */
+function setObjectCleared(discriminator){
+    const obje = getObject(discriminator);
+    
+    obje.children[0].classList.add("mpob-clerdd");
+    $(obje.children[0]).prepend(`<div class="Hjasgia"><K></K><R></R></div>`);
 }

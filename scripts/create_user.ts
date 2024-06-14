@@ -18,7 +18,7 @@ async function create(idx: number): Promise<void>{
 
 
 !async function(){
-    for (var i=0; i < HOW_MANY; i++){
+    for (var i=1; i <= HOW_MANY; i++){
         await create(i);
     }
 }();

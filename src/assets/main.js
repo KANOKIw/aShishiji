@@ -103,6 +103,7 @@ function setCanvasSizes(){
             
             moveMapAssistingNegative(canvas, ctx, { left: 0, top: 0 });
             showDigitsOnFloor(initial_floor, mapObjectComponent);
+            showClearedOrgs();
             setBehavParam();
         }
 

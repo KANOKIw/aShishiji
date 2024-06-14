@@ -92,7 +92,7 @@ function getBehavior(elm){
 /**
  * 
  * @param {mapObjectElement} elm 
- * @returns {{width: number, height: number}}
+ * @returns {Sizes}
  */
 function getDefaultSize(elm){
     /**@ts-ignore @type {number[]} */

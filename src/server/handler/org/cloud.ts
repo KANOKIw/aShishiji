@@ -242,7 +242,7 @@ export class Cloud{
      */
     static getOrgMaCloudSize(orgname: string): Promise<number>{
         return new Promise(function(resolve, reject){
-            authDB.all(`SELECT * FROM Auth_and_Data WHERE org_name=?`, [ orgname ], (err, rows: OrgAuthColumn[]) => {
+            authDB.all(`SELECT * FROM Auth_Data WHERE org_name=?`, [ orgname ], (err, rows: OrgAuthColumn[]) => {
                 if (rows && rows[0]){
                     resolve(rows[0].cloud_size);
                 } else {

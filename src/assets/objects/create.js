@@ -12,7 +12,7 @@
  * use /scripts/coords.py to find coordinate
  * @param {mapObject} objectData 
  */
-function putMobjonMap(objectData){
+async function putMobjonMap(objectData){
     /**@ts-ignore @type {HTMLElement} */
     const viewer = document.getElementById(cssName.view);
     /**@ts-ignore @type {HTMLElement} */
@@ -52,14 +52,17 @@ function putMobjonMap(objectData){
     }
 
 
+    const gt = { df: "", st: "" };
+
+    gt.df = `dfsize="${objectData.object.size.width} ${objectData.object.size.height}"`;
+    gt.st = `min-width:${objectData.object.size.width}px;min-height:${objectData.object.size.height}px;max-width:${objectData.object.size.width}px;max-height:${objectData.object.size.height}px;`
 
     const element_outerHTML = `
         <div id="${obj_id}" class="mpob centeral" style="transform: translate(${objectCoords_fromCanvas.x}px, ${objectCoords_fromCanvas.y}px); z-index: ${zIndex};"
             coords="${objectData.object.coordinate.x} ${objectData.object.coordinate.y}"
             behavior="${objectData.object.type.behavior}"
-            dfsize="${objectData.object.size.width} ${objectData.object.size.height}">
-            <div class="canvas_interactive mpobmctx ${classes}" style="background-image:url('${iconsrc}');
-min-width:${objectData.object.size.width}px;min-height:${objectData.object.size.height}px;max-width:${objectData.object.size.width}px;max-height:${objectData.object.size.height}px;${styles}" dfcs="${dfcursor}">
+            ${gt.df}>
+            <div class="canvas_interactive mpobmctx ${classes}" style="background-image:url('${iconsrc}');${gt.st}${styles}" dfcs="${dfcursor}">
             </div>
         </div>
     `;
@@ -149,4 +152,11 @@ function showDigitsOnFloor(currentfloor, objects){
         }
     }
     updatePositions();
+}
+
+
+function showClearedOrgs(){
+    for (const orgname of LOGIN_INFO.data.completed_org){
+        setObjectCleared(orgname);
+    }
 }

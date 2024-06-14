@@ -1419,6 +1419,10 @@ table{
     transition: transform 0.2s ease;
 }
 
+.canvas_interactive{
+    position: relative;
+}
+
 .interactive_trans,.mpobmctx:hover{
     transform: var(--shishiji-map-object-hovered-scale);
 }
@@ -1673,10 +1677,49 @@ shishiji-normal-void.Byeonig{
     }
 }
 
+.Hjasgia{
+    pointer-events: none;
+    transform: scale(0.8);
+    position: absolute;
+    right: 0;top: 0;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    right: -10px;
+}
+
+K{
+    display: block;
+    background-color: green;
+    width: 8px;
+    height: 4px;
+    transform: rotate(50deg);
+    position: absolute;
+    top: 12px;
+    right: 13px;
+}
+
+R{
+    display: block;
+    background-color: green;
+    width: 14px;
+    height: 4px;
+    top: 11px;
+    right: 3px;
+    transform: rotate(135deg);
+    position: absolute;
+}
+
 #oive_z{
     position: fixed;
     z-index: 2024;
     display: none;
+}
+
+.mpob-clerdd{
+    border-color: #e7bf3c;
 }
 
 .mpob{

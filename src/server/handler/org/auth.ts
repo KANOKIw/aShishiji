@@ -22,7 +22,7 @@ export class OrgAuth{
         }
     
         authDB.serialize(() => {
-            authDB.all(`SELECT * FROM Auth_and_Data WHERE org_name=?`,
+            authDB.all(`SELECT * FROM Auth_Data WHERE org_name=?`,
             [ username ], function(err: Error | null, rows: OrgAuthColumn[]){
                 if (err){
                     returnError(res, 500);
@@ -74,7 +74,7 @@ export class OrgAuth{
         const data = req.body;
         const session = data.session;
 
-        OrgAuth._endSession(session);
+        await OrgAuth._endSession(session);
         res.status(202).end();
     }
 
@@ -91,9 +91,10 @@ export class OrgAuth{
         console.log(new Date() + ": Editor: "+orgname);
 
         const mapdata = AppAPI.getOrgMdata(orgname) || DEFAULT_MAP_OBJECT;
+        const fp = "./resources/cloud/org/"+orgname;
 
-        if (!fs.existsSync(Cloud._toOrgDirname(orgname)))
-            Cloud._createOrgDir(orgname);
+        if (!fs.existsSync(fp))
+            fs.mkdirSync(fp);
 
         res.status(200).json({ artdata: mapdata, usn: orgname, mxcs: await Cloud.getOrgMaCloudSize(orgname) });
     }
@@ -104,12 +105,12 @@ export class OrgAuth{
      * @param session 
      * @returns orgname or null if not found
      */
-    static _auth(session: string): Promise<string | null> {
+    static async _auth(session?: string): Promise<string | null> {
         return new Promise((resolve, reject) => {
-            if (!session) resolve(null);
+            if (!session){ resolve(null); return; }
             
             authDB.all(`SELECT * FROM Auth_Sessions WHERE sessionid=?`, [ session ], function(err: Error | null, rows: OrgAuthSessionColumn[]) {
-                if (err) resolve(null);
+                if (err){ resolve(null); return; }
                 else {
                     if (rows.length > 0) {
                         const orgname = rows[0].corresponder;
@@ -123,7 +124,26 @@ export class OrgAuth{
     }
 
 
-    static _endSession(session: string): void{
-        authDB.run(`DELETE FROM Auth_Sessions WHERE sessionid=?`, [ session ]);
+    static async _cidAuth(org_name: string, cid: string): Promise<string>{
+        return new Promise((resolve, reject) => {
+            authDB.all(`SELECT * FROM Auth_Data WHERE org_name=?`, [ org_name ], function(err: Error | null, rows: OrgAuthColumn[]) {
+                if (err){ reject("err...?"); return; }
+                
+                const org_data = rows[0];
+    
+                if (!org_data){
+                    reject("no org found");
+                } else if (org_data.confidence != cid){
+                    reject("incorrect confidence");
+                } else {
+                    resolve("matched smorg!!");
+                }
+            });
+        });
+    }
+
+
+    static async _endSession(session: string): Promise<void>{
+        return new Promise((r, j) => authDB.run(`DELETE FROM Auth_Sessions WHERE sessionid=?`, [ session ], r));
     }
 }

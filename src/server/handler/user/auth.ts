@@ -3,6 +3,7 @@ import { userDB } from "./doubt";
 
 import { User_QRlogin_Colmn, User_Session_Colmn } from "../../server-dts/server"
 import { random } from "./doubt";
+import { User } from "./user";
 
 
 function rejectReq(res: Response, status: number, msg: string): void{
@@ -44,10 +45,10 @@ export class UserAuth{
     }
 
 
-    static async fineData(session_id: string): Promise<string>{
+    static async fineData(session_id: string): Promise<User_QRlogin_Colmn>{
         return new Promise((resolve, reject) => {
             userDB.all(`SELECT * FROM QRlogin_Sessions WHERE session=?`, [ session_id ],
-                function(err, rows: User_Session_Colmn[]){
+                async function(err, rows: User_Session_Colmn[]){
                     if (err){
                         reject("unknown");
                         return;
@@ -58,7 +59,9 @@ export class UserAuth{
                     if (!row){
                         reject("no user found");
                     } else {
-                        resolve(row.discriminator);
+                        const user = new User(row.discriminator);
+                        
+                        resolve(await user.getData(null));
                     }
                 }
             )
@@ -92,9 +95,10 @@ export class UserAuth{
         const session_id = request.cookies.__shjSID;
         
         await UserAuth.fineData(session_id)
-        .then(discriminator => {
+        .then(row => {
             response.status(200).json({
-                discriminator: discriminator,
+                discriminator: row.discriminator,
+                completed_org: row.explored_org || "[]",
             });
         })
         .catch(err => {

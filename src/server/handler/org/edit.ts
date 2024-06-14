@@ -6,7 +6,7 @@ import { mapObject } from "../../server-dts/server";
 import { returnError } from "./doubt";
 
 
-export class Edit{
+export class Edit extends OrgAuth{
     async savemain(req: Request, res: Response): Promise<void>{
         const data = req.body;
         const session = data.session;

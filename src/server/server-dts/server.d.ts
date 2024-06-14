@@ -18,6 +18,7 @@ interface OrgAuthColumn extends DBColumn {
     org_name: string;
     pass_word: string;
     cloud_size: number;
+    confidence: string;
 }
 
 interface OrgAuthSessionColumn extends DBColumn {
@@ -28,6 +29,7 @@ interface OrgAuthSessionColumn extends DBColumn {
 interface User_QRlogin_Colmn extends DBColumn {
     confidence: string;
     discriminator: string;
+    explored_org: string;
 }
 
 interface User_Session_Colmn extends DBColumn {

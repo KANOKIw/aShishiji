@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS Auth_and_Data (
+CREATE TABLE IF NOT EXISTS Auth_Data (
     idx INTEGER,
     org_name TEXT,
     pass_word TEXT,
@@ -12,4 +12,4 @@ CREATE TABLE IF NOT EXISTS Auth_Sessions (
     PRIMARY KEY (idx)
 );
 
-INSERT INTO Auth_and_Data (org_name, pass_word, cloud_size) VALUES ("_", "_", 0);
+INSERT INTO Auth_Data (org_name, pass_word, cloud_size) VALUES ("_", "_", 0);

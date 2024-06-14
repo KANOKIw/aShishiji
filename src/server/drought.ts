@@ -10,6 +10,7 @@ import { OrgAuth } from "./handler/org/auth";
 import { Edit } from "./handler/org/edit";
 import { Cloud } from "./handler/org/cloud";
 import { UserAuth } from "./handler/user/auth";
+import { UserActivity } from "./handler/user/activity";
 
 
 const httpsOptions = {
@@ -35,6 +36,7 @@ export const orgauth = new OrgAuth();
 export const edit = new Edit();
 export const cloud = new Cloud();
 export const userauth = new UserAuth();
+export const useractivity = new UserActivity();
 
 
 export { }

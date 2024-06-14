@@ -4,6 +4,7 @@
 
 var gdash = [];
 
+
 !function(){
     var prevEvent,
         currentEvent;

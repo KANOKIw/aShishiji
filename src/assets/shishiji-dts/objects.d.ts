@@ -14,7 +14,7 @@ export interface mapObjElement extends Element {
 }
 
 interface LoginData {
-    
+    completed_org: string[];
 }
 
 export interface LoginInfo {
