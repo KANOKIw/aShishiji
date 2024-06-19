@@ -1,7 +1,3 @@
-import { Position } from "./shishiji";
-
-
-var lastTouchPos: Position = [ null, null ];
-var lastTouchesDis = 0;
-var lastCursorPos: Position = [ null, null ];
-var zoomratio = 10;
+version https://git-lfs.github.com/spec/v1
+oid sha256:3ed612872d7e94e415eabfe1025410980633acd246ed447b6742de2c0dcc1647
+size 183
