@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28394cc9973fb361c200d0246fa408473a3b1ca9a861ba29b59caffe1bb1fa17
-size 864
+{
+    "article": {
+        "title": "物理部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§yエコーマイクの作成§r§v§y物理実験室§r§v§y\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 339,
+            "y": 581
+        },
+        "images": {
+            "icon": "image_0.jpeg"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F4"
+    },
+    "discriminator": "butsuribu"
+}

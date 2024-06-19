@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a029fa08328f84ee0f9f5b20a6195cb3e61dc9ac96cc936dfbe14135635fc13
-size 1004
+{
+    "article": {
+        "title": "歴史部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§v\n§yオープンキャンパスでの活動内容：歴史部員が活動で創作した模型の展示や、クイズ。歴史部の所持する歴史的な物品の展示。\n§v§v\n§y開催場所：３C\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1734,
+            "y": 533
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "rekishibu"
+}

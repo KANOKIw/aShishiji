@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15594b21aa42c018b99d8914826d32cb7778e7a1e37a509746e06c25ed7a2afa
-size 938
+//@ts-check
+"use strict";
+
+
+function _materialbtnFades(event){
+    const button = event.currentTarget;
+    const diameter = Math.max(button.clientWidth, button.clientHeight);
+    const radius = diameter / 2;
+    const circle = document.createElement('span');
+    
+    circle.style.width = `${diameter}px`;
+    circle.style.height = `${diameter}px`;
+
+    circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+    circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+
+    circle.classList.add('ripple');
+
+    const ripple = button.getElementsByClassName('ripple')[0];
+    if (ripple) ripple.remove();
+    button.appendChild(circle);
+}
+
+
+//@ts-ignore
+const MaterialButton = window.MaterialButton = class MaterialButton{
+    /**
+     * 
+     * @param {HTMLElement} button 
+     */
+    constructor(button){
+        button.addEventListener("click", _materialbtnFades);
+    }
+}

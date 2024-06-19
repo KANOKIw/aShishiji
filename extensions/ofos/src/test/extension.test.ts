@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6286d2b97121e5fbe38fafa5636d7563a781c1bc5fb14c363d8fc901c78a0de3
-size 474
+import * as assert from 'assert';
+
+// You can import and use all API from the 'vscode' module
+// as well as import your extension to test it
+import * as vscode from 'vscode';
+// import * as myExtension from '../../extension';
+
+suite('Extension Test Suite', () => {
+	vscode.window.showInformationMessage('Start all tests.');
+
+	test('Sample test', () => {
+		assert.strictEqual(-1, [1, 2, 3].indexOf(5));
+		assert.strictEqual(-1, [1, 2, 3].indexOf(0));
+	});
+});

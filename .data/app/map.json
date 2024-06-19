@@ -1,3 +1,54 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:be328e2c5f802f4ce104e6e035ac97494b864200b73fa27ddf73af684bb92365
-size 1393
+{
+	"initial_floor": "F1",
+	"F1": {
+		"tile_width": 1250,
+		"tile_height": 1250,
+		"xrange": 1,
+		"yrange": 1,
+		"format": "/resources/map-tiles/floor_1/tile_{0}_{1}.png",
+		"spare": "/resources/img/white.png",
+		"abstract": "/resources/img/abstract/mc4k.png"
+	},
+	"F2": {
+		"tile_width": 1250,
+		"tile_height": 1250,
+		"xrange": 1,
+		"yrange": 1,
+		"format": "/resources/map-tiles/floor_2/tile_{0}_{1}.png",
+		"spare": "/resources/img/white.png",
+		"abstract": "/resources/img/abstract/good_view.png"
+	},
+	"F3": {
+		"tile_width": 1250,
+		"tile_height": 1250,
+		"xrange": 1,
+		"yrange": 1,
+		"width": 2000,
+		"height": 2000,
+		"format": "/resources/map-tiles/floor_3/tile_{0}_{1}.png",
+		"spare": "/resources/img/white.png",
+		"abstract": "/resources/img/abstract/good.png"
+	},
+	"F4": {
+		"tile_width": 1250,
+		"tile_height": 1250,
+		"xrange": 1,
+		"yrange": 1,
+		"width": 4000,
+		"height": 4000,
+		"format": "/resources/map-tiles/floor_4/tile_{0}_{1}.png",
+		"spare": "/resources/img/white.png",
+		"abstract": "/resources/img/abstract/Minecraft8K.png"
+	},
+	"ALL": {
+		"tile_width": 500,
+		"tile_height": 500,
+		"xrange": 3,
+		"yrange": 2,
+		"width": 4000,
+		"height": 4000,
+		"format": "/resources/map-tiles/open_campus/tile_{0}_{1}.png",
+		"spare": "/resources/img/white.png",
+		"abstract": "/resources/img/abstract/Minecraft8K.png"
+	}
+}

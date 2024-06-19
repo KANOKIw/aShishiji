@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c489ae1c39b0f65881641c3ab9a92b8c05df98253e84edfba5624bc26f5d5a48
-size 1091
+{
+    "article": {
+        "title": "ドローン研究同好会",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§y§lドローン同好会§r§v§zオープンキャンパスでの活動内容:§vドローンの操縦体験と、レース中のカメラ映像が見られるFPVレース体験を実施しています\n§v§v§y開催場所:発心館４階（廊下・教室）\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "image_0.png"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1676,
+            "y": 365
+        },
+        "images": {
+            "icon": "image_0.png"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F4"
+    },
+    "discriminator": "drone"
+}

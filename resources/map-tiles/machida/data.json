@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b57c77e24f85802e946e7a7b71572a96f66c6452e6a9d0b1d586d6af7db8cf7c
-size 155
+{
+    "tile_width": 50,
+    "tile_height": 50,
+    "xrange": 12,
+    "yrange": 9,
+    "width": 50,
+    "height": 50,
+    "format": "tile_{y}_{x}"
+}

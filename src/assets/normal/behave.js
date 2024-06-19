@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1e764ef3665e47b7576034be2f51f27fea30acf90104e1736285b6969eb03fa
-size 656
+//@ts-check
+"use strict";
+
+
+/**
+ * when #oive_a is clicked
+ */
+function openNorm(){
+    $("#gtnorm").addClass("openH");
+    $("shishiji-normal-void").removeClass("Byeonig").addClass("Hellonig").show();
+    $("#gtmap").removeClass("closeH");
+}
+
+
+function closeNorm(){
+    $("#gtmap").addClass("closeH");
+    $("shishiji-normal-void").removeClass("Hellonig").addClass("Byeonig");
+    $("#gtnorm").removeClass("openH");
+}
+
+
+window.addEventListener("load", function(){
+    this.document.getElementById("gtnorm")?.addEventListener("click", openNorm);
+    this.document.getElementById("gtmap")?.addEventListener("click", closeNorm);
+});

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:84acc58167c112d0ce80b26c4ad69fec05b952cebfec30a45f1d84c6e8f467d7
-size 790
+{
+    "article": {
+        "title": "空手道部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 247,
+            "y": 904
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "karate"
+}

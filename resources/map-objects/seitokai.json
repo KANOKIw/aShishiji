@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7289ed6b96deea70de93ee4f15cb2a1fd1a3d6396c8b60ff18dd39ec3be13d4f
-size 1266
+{
+    "article": {
+        "title": "生徒会執行部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§zオープンキャンパスでの活動内容：学校のツアーガイド、生徒による受験相談、\n11時から11時45分、13時30分から14時15分にかぎり座談会を行ないます。\n§v§r§z活動場所：４年A組\n§v§r\n§v§r§z§4注意事項\n§v§r§4§z座談会を行なっている11時から11時45分、\n13時30分から14時15分は、受験相談を行なっていません。ご注意ください。\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "image_0.png"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1246,
+            "y": 1398
+        },
+        "images": {
+            "icon": "image_0.jpeg"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "seitokai"
+}

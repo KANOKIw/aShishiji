@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:81dee35f74043f2162504eaa3bb9ed05f71ccdd9385c70abcfe84de654f61043
-size 638
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "out": false, // set this to true to hide the "out" folder with the compiled JS files
+        "dist": false // set this to true to hide the "dist" folder with the compiled JS files
+    },
+    "search.exclude": {
+        "out": true, // set this to false to include "out" folder in search results
+        "dist": true // set this to false to include "dist" folder in search results
+    },
+    // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+    "typescript.tsc.autoDetect": "off"
+}

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8a61e91e0bd8380dc01235eed78caf820325ab306a4e649fc90d5c343713f21
-size 934
+{
+    "article": {
+        "title": "美術部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§yオープンキャンパスでの活動内容：§v§z作品展示とキャンドル制作WS§v§r§v§y開催場所：美術室\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 906,
+            "y": 2201
+        },
+        "images": {
+            "icon": "image_0.jpg"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "articulture"
+}

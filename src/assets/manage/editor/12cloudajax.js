@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:93c16686e86489520e726ef39f0dd20e2162dd7993f67b335acda370c7a896c8
-size 678
+//@ts-check
+"use strict";
+
+
+document.getElementById("manageFileb")?.addEventListener("click", function(){
+    Popup.startLoad({ width: 1200, height: 1200 });
+    
+    var cloudAjax;
+    const cloudwait_tm = setTimeout(() => {
+        cloudAjax = $.post("/org/manage/file/list", { session: session });
+        cloudAjax
+        .done(_cloudok)
+        .catch(_cloudfail);
+    }, 500);
+
+    function onClose(){
+        if (cloudAjax)
+            cloudAjax.abort();
+        clearTimeout(cloudwait_tm);
+        Popup.removeCloseListener(onClose);
+    }
+    
+    Popup.addCloseListener(onClose);
+});
+
+
+LOADW++;
+updatestartupProgress(LOADW*100/scriptlen);

@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f62e56f392079915745b004d5d54dcc5768164808fce9717d20c84a48b02e78
-size 794
+{
+    "article": {
+        "title": "卓球部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 479,
+            "y": 2047
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F4"
+    },
+    "discriminator": "table-tennis"
+}

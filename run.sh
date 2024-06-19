@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1794099e28a32ef8de27cd8614f776b3fb89236495131520bc6ef9e5d9c28770
-size 125
+firewall-cmd --add-port 80/tcp
+firewall-cmd --add-port 443/tcp
+
+cd /root/main/Shishiji
+
+sudo npx ts-node ./src/server/app.ts

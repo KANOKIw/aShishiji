@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b689cf8c0a43f40b5db8f33a3282767b20d8fdc731e31f4edac3e4a55e69cdbe
-size 978
+{
+    "article": {
+        "title": "獅子児祭実行委員会",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§zオープンキャンパスでの活動内容：ジェットコースター製作・webアプリ製作\n§r§v§z活動場所：ピロティー\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "image_0.png"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 926,
+            "y": 912
+        },
+        "images": {
+            "icon": "image_0.png"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "shishijifes"
+}

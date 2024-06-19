@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:13c141b98a19e49afdda32e638596b32cae98a11a33f7252cdbb3eec21ba74f8
-size 791
+{
+    "article": {
+        "title": "地学部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1246,
+            "y": 1193
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "tigakubu"
+}

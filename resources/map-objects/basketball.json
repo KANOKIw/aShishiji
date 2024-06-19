@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e91920a215173bed99bd06c4470fa62905d615b1aa930f68216ef468cfb42ab
-size 987
+{
+    "article": {
+        "title": "バスケットボール部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§l§yオープンキャンパスでやる内容:§r§v§z モデルゲーム見学とフリースロー体験§v§v§y開催場所: アリーナ(体育館)\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "image_0.png"
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 485,
+            "y": 876
+        },
+        "images": {
+            "icon": "image_0.png"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "basketball"
+}

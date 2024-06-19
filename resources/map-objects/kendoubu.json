@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:862dd1036bc53c1455f19d60a09ea539e1e9f74b435d789f0b55fdad8ed263ab
-size 908
+{
+    "article": {
+        "title": "剣道部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#ffd57c",
+        "content": "§yオープンキャンパスでやる内容：§y竹刀で新聞紙を切る§r§v§y\n ",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": "image_1.jpeg"
+        },
+        "venue": "武道場",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 714,
+            "y": 914
+        },
+        "images": {
+            "icon": "image_0.jpg"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "kendoubu"
+}

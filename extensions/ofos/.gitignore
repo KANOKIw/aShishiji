@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fab6d91be7298087fb65dfb2808ef0e03a5e91cac23a3f143fec42cbbefc32a1
-size 48
+out
+dist
+node_modules
+.vscode-test/
+*.vsix

@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d1857f2f20a692b3200dacd5df4c4e920d0cd5f6403e66e0dca3347f6bdf45f
-size 1152
+import string
+import random
+import threading
+import httpx
+import json
+
+from typing import *
+
+
+spam_url = "https://dev.kanokiw.com/api/test/spam"
+responses: Sequence[Dict[str, str]] = []
+
+
+def randomstr(length):
+    chars = string.ascii_letters + string.digits
+    rs = ''.join(random.choice(chars) for _ in range(length))
+    return rs
+
+
+def do_request():
+    global responses
+    randomstrs = [randomstr(32) for _ in range(200)]
+    data = {}
+
+    for i in range(1, len(randomstrs), 2):
+        data[randomstrs[i]] = randomstrs[i-1]
+
+    print(data)
+    with httpx.Client() as client:
+        res = client.post(
+            spam_url, json=data, headers={ "method": "python" }
+        )
+        responses.append(res.json())
+        with open(r".\\response.json", "w") as f:
+            json.dump(responses, f, indent=4)
+
+
+def main():
+    threads = [ lambda: threading.Thread(target=do_request).start() for _ in range(10_000) ]
+
+    for thread in threads:
+        thread()
+
+    for thread in threads:
+        if hasattr(thread, "join"):
+            thread.join()
+
+
+if __name__ == "__main__":
+    main()

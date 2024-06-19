@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cad2ddc48687dd552584e5e725e7d63c6781952366d9cdf9ad747aefb58fb322
-size 1060
+{
+    "article": {
+        "title": "Magic life",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§yオープンキャンパスでの活動内容：§z§v観客の目の前で、あっと驚くような現象を見せましょう！§vもしかしたらテレビでの「あの」マジックもあるかも知れないです§v§v§r§y開催場所：4d",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": "",
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1401,
+            "y": 205
+        },
+        "images": {
+            "icon": "image_0.jpeg"
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F3"
+    },
+    "discriminator": "magic-life"
+}

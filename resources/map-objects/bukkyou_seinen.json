@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78fe65e56bd2b23063ef3f2d865644d3a8380ec90e424cedfce7951b60527a15
-size 1055
+{
+    "article": {
+        "title": "仏教青年会",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§yオープンキャンパスでの活動内容：禅堂内覧および坐禅体験。\n§v§v\n§y開催場所：禅堂\n§v§v\n§y§c注意事項：時間によって催し物が異なりますので、タイムテーブルをご覧ください。\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1114,
+            "y": 2162
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "bukkyou_seinen"
+}

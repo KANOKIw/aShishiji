@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:54f08931c66b784b36cb41e83892abc687cad8df24c2c695ebe40894fb662c6d
-size 291
+node_modules/
+npm-debug.log
+
+minecraft/server/**
+minecraft/server/servers/**/**/
+minecraft/plugins/**/.settings/
+minecraft/plugins/**/target/
+minecraft/plugins/**/src/test/
+
+extensions/**/node_modules/
+
+!resources/map-objects/.sample.json
+
+.data/user/login/originals/*
+.cert/

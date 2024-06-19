@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f163a8f574e2d366e746146a057d0dbb8422023310fb72ad6e8cf90d3b2193bf
-size 859
+{
+    "article": {
+        "title": "文芸部",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§y§6部誌（部員の作品集）の配布、コント披露\n\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1387,
+            "y": 562
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F4"
+    },
+    "discriminator": "literature"
+}

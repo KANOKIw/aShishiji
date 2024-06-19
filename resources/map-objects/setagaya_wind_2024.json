@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:01c3234625aacc39a135e0283883dccc392fb23c3e3de57bf5b61d35aa42b05a
-size 1111
+{
+    "article": {
+        "title": "光る世田谷wind2024",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "§y§6場所:修道館ホール\n§v§v\n§x§2吹奏楽部について\n§7§z§v私たちは吹奏楽部です。§v誰もが一度は聞いたことのある曲を金管楽器の迫力ある音と木管楽器の明るいメロディーでお届けします。\n∫:IMG-S=image_0.jpg-W=100;∫\n",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 392,
+            "y": 1488
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F1"
+    },
+    "discriminator": "setagaya_wind_2024"
+}

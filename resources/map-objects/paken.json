@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2710182076c74bb57f31c29ee1b2a2e9adb58e2f3895b7ffa17ceb4c127f0596
-size 806
+{
+    "article": {
+        "title": "パソコン研究同好会",
+        "subtitle": "",
+        "core_grade": "...",
+        "theme_color": "#000000",
+        "content": "",
+        "crowd_status": {
+            "level": 0,
+            "estimated": 0
+        },
+        "font_family": null,
+        "custom_tr": [],
+        "images": {
+            "header": ""
+        },
+        "venue": "",
+        "schedule": ""
+    },
+    "object": {
+        "type": {
+            "event": "org",
+            "behavior": "dynamic"
+        },
+        "coordinate": {
+            "x": 1249,
+            "y": 2168
+        },
+        "images": {
+            "icon": ""
+        },
+        "size": {
+            "width": 50,
+            "height": 50
+        },
+        "floor": "F2"
+    },
+    "discriminator": "paken"
+}

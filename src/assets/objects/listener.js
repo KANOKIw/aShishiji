@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5481fca21a0ed7f43c66e9c21ce1fbbf4337dd072b0db48823e9221bad132bad
-size 1554
+//@ts-check
+"use strict";
+
+
+!function(){
+    /**@ts-ignore @type {HTMLElement} */
+    const fselector = document.getElementById(cssName.fselector.slice(1));
+    /**@ts-ignore @type {HTMLCanvasElement} */
+    const canvas = document.getElementById(cssName.mcvs);
+    /**@ts-ignore @type {CanvasRenderingContext2D} */
+    const ctx = canvas.getContext("2d");
+
+    
+    $(cssName.fopt).children().each(function(index, elm){
+        if (!this.textContent)
+            return;
+        const text = this.getAttribute("floor") || "";
+        const so_called = this.textContent.replace(/ /g, "");
+        if (text.length < 1)
+            return;
+        
+
+        /**@this {HTMLElement} @param {string} name */
+        function addListener(name){
+            this.addEventListener("click", function(e){
+                e.preventDefault();
+                const data = MAPDATA[name];
+                if (CURRENT_FLOOR === name || data === undefined){
+                    return;
+                }
+
+                changeFloor(name, so_called, data);
+            });
+            return 0;
+        };
+
+        addListener.apply(this, [text])
+    });
+
+    $(fselector)
+    .on("click", function(e){
+        e.preventDefault();
+        if (e.target?.classList.contains("fselector-btn") || e.target?.id == "psdummy"){
+            toggleFeslOn.apply($(fselector), [overlay_modes.fselector.opened]);
+            overlay_modes.fselector.opened = !overlay_modes.fselector.opened;
+        }
+    });
+    
+    return 0;
+}();
