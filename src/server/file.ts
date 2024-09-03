@@ -1,34 +1,3 @@
-import fs from "fs";
-import path from "path";
-
-
-export function listFiles(dir: string): string[]{
-	const files: string[] = [];
-  
-	function tverse(cdir: string){
-	  	const ims = fs.readdirSync(cdir);
-  
-	  	for (const im of ims){
-			const impath = path.join(cdir, im);
-	
-			if (fs.statSync(impath).isDirectory()){
-				tverse(impath);
-			} else {
-				files.push(impath);
-			}
-	  	}
-	}
-
-	tverse(dir);
-	return files.map(f => { return f.replace(dir, ""); });
-}
-
-
-export function toSlashPath(path: string){
-	return path.replace(/\\/g, "/")
-			   .replace(/\\\\/g, "/")
-			   .replace(/\/\//g, "/");
-}
-
-
-export { }
+version https://git-lfs.github.com/spec/v1
+oid sha256:019981950d0902fbd79af89ed9a411a64ab455216dc937d510bed4e44732cae3
+size 609

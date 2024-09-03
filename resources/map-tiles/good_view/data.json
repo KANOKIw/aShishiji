@@ -1,9 +1,3 @@
-{
-    "tile_width": 500,
-    "tile_height": 500,
-    "xrange": 4,
-    "yrange": 2,
-    "width": 500,
-    "height": 500,
-    "format": "tile_{y}_{x}"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a54d7caf68b35c47c85d3024b54dd3b8e5cec12ee1e99eea1ae1e07c12a4f324
+size 158

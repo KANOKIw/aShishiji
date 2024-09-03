@@ -1,22 +1,3 @@
-import { Request, Response } from "express";
-
-import * as AppAPI from "../../utils";
-import sqlite3 from "sqlite3";
-
-
-export const Database = sqlite3.verbose();
-export const random = new AppAPI.Random();
-export const orgDB = new Database.Database("./.db/org/auth.db");
-export const Responses = {
-    "400": { status: 400, error: "Bad Request" },
-    "403": { status: 403, error: "Permission Denied" },
-    "500": { status: 500, err: "Internal Server Error" }
-};
-
-
-export function returnError(res: Response, code: 400 | 403 | 500): void{
-    res.status(code).json(Responses[code]);
-}
-
-
-export { }
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2566eb1a1a13222c18961057d28fd48c6d2ab6884f8507d8d35fe73aff6015f
+size 600

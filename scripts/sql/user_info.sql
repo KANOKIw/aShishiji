@@ -1,14 +1,3 @@
-CREATE TABLE IF NOT EXISTS QRlogin_Users (
-    idx INTEGER,
-    discriminator TEXT,
-    confidence TEXT,
-    PRIMARY KEY (idx)
-);
-CREATE TABLE IF NOT EXISTS QRlogin_Sessions (
-    idx INTEGER,
-    discriminator TEXT,
-    session TEXT NOT NULL,
-    PRIMARY KEY (idx)
-);
-
-INSERT INTO QRlogin_Users (discriminator,confidence) VALUES ("_", "_")
+version https://git-lfs.github.com/spec/v1
+oid sha256:08e016c3cc3d4055ed976410b4f63456cbedf5c0bf8605e91f9b5f40ea0a0e35
+size 349

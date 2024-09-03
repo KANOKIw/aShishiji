@@ -1,32 +1,3 @@
-//@ts-check
-"use strict";
-
-
-/**
- * Zoom canvas by scrolling mouse wheel
- * @param {WheelEvent} e 
- * @param {HTMLCanvasElement} canvas 
- */
-function canvasonScroll(e, canvas){
-    var delta = MOVEPROPERTY.scroll * 1;
-    e.deltaY > 0 ? delta = 1/delta : void 0;
-    //@ts-ignore
-    zoomMapAssistingNegative(canvas, canvas.getContext("2d"), delta, cursorPosition);
-}
-
-
-/**
- * 
- * @param {MouseEvent} e 
- * @param {HTMLCanvasElement} canvas 
- * @param {CanvasRenderingContext2D} ctx 
- */
-function onMouseMove(e, canvas, ctx){
-    /**@type {NonnullPosition} */
-    const pos = [ e.clientX, e.clientY ];
-    //@ts-ignore N - null = N
-    const moved = { left: pos[0] - pointerPosition[0], top: pos[1] - pointerPosition[1] };
-
-    moveMapAssistingNegative(canvas, ctx, moved);
-    pointerPosition = pos;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:26e80d3176960400a1195f0f2e92948338b9101d96fb240f49b4a48e11838c1b
+size 947

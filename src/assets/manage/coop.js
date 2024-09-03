@@ -1,17 +1,3 @@
-//@ts-check
-"use strict";
-
-
-const SESSIONKEY = "__ogauthk",
-AUTOSAVENOTIFICATIONKEY = "__gduahsy",
-    AUTOSAVEKEY = "__SAnas",
-    EDITORCONFIGKEY = "__ijawd",
-    INSTAPREVIEWKEY = "__sdjiaoji",
-    QUICKINPUTNOTIFICATIONKEY = "__kldsaaa",
-    COLOREDITORKEY = "__ljkAAOIj",
-    VISIBLESPACEKEY = "__Aajdsio",
-    VISIBLEONLYENDSPACEKEY = "__ppasdaSF",
-    SOLIDOBJECTKEY = "__dsiauhAW",
-    _SOLIDOBJECTKEY = "__jdjjjass",
-    ZOOMRATIOKEY = "__UIJdwj",
-    TOPKEY = "__dsaijod";
+version https://git-lfs.github.com/spec/v1
+oid sha256:963c2a4bb18b0457ba652319c5479323fba522148a8aee8e2866a26edd07338f
+size 487
